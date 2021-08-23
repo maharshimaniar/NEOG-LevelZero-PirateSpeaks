@@ -2,42 +2,68 @@
 
 * {
     box-sizing: border-box;
+    max-width: 600px;
+    min-width: 480px;
+    margin: auto;
+    color: var(--text-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 body {
     margin: 0;
-    font-family: 'Kalam', cursive;
-    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    background-image: url(./images/background.svg);
+    background-attachment: fixed;
+    text-align: center;
 }
 
 :root {
-    --primary: #F2C94C;
+    --primary: #00f0ff;
     --black: #333333;
-    --width-break:600px
+    --secondary: rgb(43, 43, 43);
+    --text-color: #bfbfbf;
 }
 
 .header{
-    background-color: var(--primary);
     margin : 10px;
     padding : 20px;
+    color: var(--primary);
+    background-color: var(--secondary);
+    border-bottom-right-radius:20px;
+    
+
+}
+
+.header > h1{
+    color: var(--primary);
 }
 
 textarea {
     width: 80%;
     height: 10vh;
     display: block;
-    margin: 1rem;
+    margin: auto;
     padding: 1rem;
     font-size: large;
+    color: white;
+    background-color: var(--secondary);
+    text-align: center;
+    border: 1px solid var(--primary);
+    font-size: 20px;
 }
 
 #txt-output {
-    border: 1px solid black;
+    border: 1px solid var(--primary);
     height: 10vh;
     width: 80%;
-    margin: 1rem;
+    margin: auto;
     padding: 1rem;
     font-size: large;
+    background-color: var(--secondary);
+    color: white;
+    font-size: 20px;
 }
 
 #btn-translate{
@@ -47,23 +73,27 @@ textarea {
     font-size: large;
     font-weight: bold;
     border: none;
+    border-radius: 10px;
+    color: var(--black);
+    min-width: 0;
 }
 
 .footer{
-    background-color: var(--primary);
+    background-color: var(--secondary);
+    color: white;
+    padding : 20px;
+    margin: 10px;
     position: fixed;
     bottom: 0;
-    margin : 10px;
-    padding : 20px;
-    width: 98%;
+    border-top-left-radius: 20px;
 }
 
 .footer-hero{
     font-size: 32px;
     margin-bottom: 30px;
+    color: var(--primary);
 }
 
 .footer-content{
     font-size: 20px;
-    max-width: 600px;
 }
