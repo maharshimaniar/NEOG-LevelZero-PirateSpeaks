@@ -1,4 +1,4 @@
-# Banana Speak
+# Pirate Speak
 ### Translates User entered text into Pirate Language with the help of external API.
 <br/>
 
